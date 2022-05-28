@@ -51,20 +51,20 @@ db.inventory.find({"price":{$ne:50}})
 
 #### AND
 ```
-> db.inventory.find({$and:[{"product_name":"shirts"},{"price": {$ne:50}]})
+db.inventory.find({$and:[{"product_name":"shirts"},{"price": {$ne:50}]})
 ```
 
 #### OR
 ```
-> db.inventory.find({$or:[{"product_name":"shirts"},{"price": {$ne:50}]})
+db.inventory.find({$or:[{"product_name":"shirts"},{"price": {$ne:50}]})
 ```
 
 #### NOR
 ```
-> db.inventory.find({$nor:[{"product_name":"shirts"},{"price": {$ne:50}]})
+db.inventory.find({$nor:[{"product_name":"shirts"},{"price": {$ne:50}]})
 ```
 
 #### NOT
 ```
-> db.inventory.find({$not:{"price": {$gt:50}}})
+db.inventory.find({$not:{"price": {$gt:50}}})
 ```
