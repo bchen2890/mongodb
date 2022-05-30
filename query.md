@@ -1,4 +1,12 @@
 ## Query options
+#### Limit the number of documents
+```
+db.inventory.find().limit(10);
+```
+#### Skip the number of documents
+```
+db.inventory.find().skip(10);
+```
 #### Matches documents with the key `price` with null and non-null values
 ```
 db.inventory.find({"price":{$exists:true}});
